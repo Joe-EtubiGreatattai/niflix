@@ -294,35 +294,51 @@
     </div>
 
     <script>
-        $(".more-cards").hide(0.0000001);
-        $(".inspect-page").hide(0.0000001);
-        $(".screen-2").hide(0.0000001);
-        $(".screen-1").hide(0.0000001);
-        $(".app").hide(0.0000001);
-
-        $(".splash-screen").delay(5000).fadeOut();
-        $(".app").delay(5000).fadeIn();
-        $(".screen-1").delay(5000).fadeIn();
-
-        $(".screen-1-card").click(function () {
-            $(".screen-1").fadeOut();
-            $(".screen-2").fadeIn();
-            $(".more-cards").fadeIn();
-        });
-
-        $(".card-2").click(function () {
-            $(".screen-1").fadeOut();
-            $(".screen-2").fadeIn();
-            $(".more-cards").fadeOut();
-        $(".inspect-page").fadeIn();
-        });
+    
+       
 
         $(".cancel").click(function () {
             $(".screen-1").fadeOut();
             $(".screen-2").fadeIn();
             $(".more-cards").fadeIn();
-        $(".inspect-page").fadeOut();
+            $(".inspect-page").fadeOut();
         });
+
+     document.querySelector('.screen-1-card').addEventListener('click',()=>{
+        document.querySelector(".screen-1").style.display = 'none';
+        document.querySelector(".screen-2").style.display = '';
+        document.querySelector(".more-cards").style.display = '';
+     })
+
+     document.querySelector('.card-2').addEventListener('click',()=>{
+        document.querySelector(".screen-1").style.display = 'none';
+        document.querySelector(".screen-2").style.display = '';
+        document.querySelector(".more-cards").style.display = 'none';
+        document.querySelector(".inspect-page").style.display = '';
+     })
+
+     document.querySelector('.cancel').addEventListener('click',()=>{
+        document.querySelector(".screen-1").style.display = 'none';
+        document.querySelector(".screen-2").style.display = '';
+        document.querySelector(".more-cards").style.display = '';
+        document.querySelector(".inspect-page").style.display = 'none';
+     })
+     
+
+
+        var delayInMilliseconds = 5000;
+        setTimeout(function () {
+            document.querySelector(".splash-screen").style.display = 'none';
+            document.querySelector(".app").style.display = '';
+            document.querySelector(".screen-1").style.display = '';
+        }, delayInMilliseconds);
+
+
+        document.querySelector(".more-cards").style.display = 'none';
+        document.querySelector(".inspect-page").style.display = 'none';
+        document.querySelector(".screen-2").style.display = 'none';
+        document.querySelector(".screen-1").style.display = 'none';
+        document.querySelector(".app").style.display = 'none';       
     </script>
 </body>
 
