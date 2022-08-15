@@ -24,7 +24,6 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
-    visibility: hidden;
 }
 
 .app {
@@ -46,13 +45,12 @@ body {
     margin: 1rem;
     align-items: center;
     flex-direction: column;
-    visibility: hidden;
 }
 
 .screen-1-top-div {
     font-weight: 500;
     margin: 3rem 0rem;
-    width: 100%;
+    width: 90%;
     height: fit-content;
     display: flex;
 }
@@ -99,7 +97,6 @@ body {
 .screen-2 {
     width: 100%;
     height: 100%;
-    position: absolute;
     top: 0;
     left: 0;
     justify-content: center;
@@ -109,7 +106,7 @@ body {
 }
 
 .sub-app-holder {
-    margin-top: -4.2rem;
+    margin-top: -4rem;
     height: 93%;
     width: 100%;
     overflow: scroll;
@@ -336,6 +333,7 @@ img {
 
 
 .sub-app-menu {
+    margin-top: -3rem;
     width: 100%;
     height: 10%;
     background: #111;
@@ -377,6 +375,222 @@ img {
     margin-top: -2rem;
     margin-left: 1rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.inspect-page{
+    margin-top: -3rem;
+    height: 93%;
+    width: 100%;
+    overflow: scroll;
+    gap: .5rem;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-image{
+    width: 100%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 60vh;
+    margin-top: -60vh;
+    z-index: 0;
+
+}
+
+.top-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.small-image{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.small-image img{
+    width: 40%;
+    height: 90%;
+}
+
+.more-info{
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1rem;
+}
+
+.text-and-box{
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box{
+    border: 3px solid #fff;
+    width: 2.5rem;
+    text-align: center;
+    transform: scale(.6);
+    -webkit-transform: scale(.6);
+    -moz-transform: scale(.6);
+    -ms-transform: scale(.6);
+    -o-transform: scale(.6);
+}
+
+.big-red-btn{
+    gap: .3rem;
+    width: 90%;
+    background: rgb(185, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .4rem 0px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.small-text{
+    width: 90%;
+    font-size: .7rem;
+}
+
+.smaller-text{
+    font-size: .55rem;
+    font-weight: 100;
+    width: 90%;
+    opacity: .5;
+}
+
+.list4-holder{
+    width: 100%;
+}
+
+.list4{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 0rem;
+    margin-left: 1rem;
+}
+
+.list4 li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+    width: 5rem;
+    gap: .3rem;
+    padding-bottom: .5rem;
+}
+
+
+.lighter-list{
+    font-size: .6rem;
+    opacity: .6;
+}
+
+
+.list4 li:nth-child(1){
+    border-bottom: 2px solid red;
+}
+
+.title-icon ion-icon{
+    margin-left: .6rem;
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+}
+
+.list5-holder{
+    width: 100%;
+    height: auto;
+}
+
+.list5{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin-left: .5rem;
+    font-weight: 600;
+   
+}
+
+.list5 li{
+    opacity: .3;
+}
+
+.opac{
+    opacity: 1 !important;
+}
+
+.movie-info-card-holder{
+    width: 90%;
+    height: auto;
+}
+
+.movie-info-card{
+    width: 100%;
+    height: auto;
+}
+
+.card-img{
+    width: 12rem;
+    height: 8rem;
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.play-div{
+    width: 12rem;
+    height: 8rem;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -8rem;
+    font-size: 3rem;
+}
+
+.small-dark-text{
+    font-size: .7rem;
+    opacity: .5;
+    margin: .4rem 0px;
+}
+
+.cancel{
+    font-size: 1rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    margin-top: .5rem;
+    margin-left: auto;
+    margin-right: 1rem;
+    padding: .2rem;
+    display: grid;
+    place-items: center;
+    z-index: 2;
+    background: #111;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
